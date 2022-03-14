@@ -7,7 +7,7 @@
 ### Code to Describe Analysis
 #### To find the total daily volume we first set tickerVolumes as "Long." Then, we created a for loop to initialize volume to zero. We did this by setting "i" equal to "0 to 11" and then "tickerVolumes(i) = 0." We created another for loop to run through all the rows and increase the volume for each ticker by using code   "tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value." For the return, we use the formula "tickerEndingPrices(i) / tickerStartingPrices(i) - 1" for each ticker. In order to ensure we have the first and last row's of the selected ticker we want for each formula, we use "If Cells(i - 1, 1).Value <> tickers(tickerIndex) Then tickerStartingPrices(tickerIndex) = Cells(i, 6).Value End If" and  "If Cells(i + 1, 1).Value <> tickers(tickerIndex) Then tickerEndingPrices(tickerIndex) = Cells(i, 6).Value." The code runs asynchronously, so after each run the ticker index increases by one, and the code is run again for the next ticker.  
 ### Run Time Comparison and Screenshots
-#### The execution times of the original script and refactored script differed a substantial amount. The refactored script ran much faster. Please see image below for the macro run for year 2017 and then for 2018. As you can see, the run time has been cut down significantly. 
+#### The execution times of the original script and refactored script differed a substantial amount. The refactored script ran much faster. Please see image below for the macro run for year 2017 and then for 2018 after refactoring the code. The run time has been cut down significantly. 
 ##### Embed 2017 Image
 ! [2017 Data](Resources/VBA_Challenge_2017.png)
 ! [2018 Data](Resources/VBA_Challenge_2018.png)
