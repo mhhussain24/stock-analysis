@@ -1,6 +1,6 @@
 # Analysis of Stocks
 ## OverView of the Project
-### The purpose of the project is to analyze datasets including the entire stock market over any number of years. The code in the VBA attached loops through all the data provided, and then collects the information to quickly deliver the total daily volume and the return on each stock. The formatting of code will also allow for anyone viewing this code to quickly see what return percentages are below and above zero. 
+### The purpose of the project is to analyze datasets including the entire stock market for any year that data is provided for. The code in the VBA attached loops through all the data provided, and then collects the information to quickly deliver the total daily volume and the return on each stock. The formatting of code will also allow for anyone viewing this code to quickly see what return percentages are below and above zero. 
 ## Results
 ### Comparing 2017 and 2018
 #### In the year 2017, the return on stocks was - for the most part - postive. Other than ticker "TERP" all the stocks had a positive return. Some stocks even had returns over 100%. However, in 2018 the return on stocks dropped substantially. There were only two stocks that were still maintaining positive returns. Of those two, one of them (RUN) actually increased its return percentage by about 80%. Total daily volume for 2017 was nearly 140 million less than in 2018 for the same tickers. 
